@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-25 23:35:05.405244",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "hour",
+  "t_name",
+  "subject",
+  "from_time",
+  "to_time"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "hour",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Hour",
+   "options": "Hours"
+  },
+  {
+   "columns": 2,
+   "fieldname": "subject",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Subject",
+   "options": "Subject"
+  },
+  {
+   "columns": 2,
+   "fetch_from": "hour.from_time",
+   "fieldname": "from_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "From ",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fetch_from": "hour.to_time",
+   "fieldname": "to_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "To",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "teacher.name1",
+   "fieldname": "t_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Teacher",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-26 00:50:49.807789",
+ "modified_by": "Administrator",
+ "module": "LMS",
+ "name": "s_friday",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-25 14:23:33.807311",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+    "hours",
+    "subject",
+    "standard",
+    "division",
+    "from_time",
+    "to_time"
+   ],
+   "fields": [
+    {
+     "columns": 1,
+     "fieldname": "hours",
+     "fieldtype": "Link",
+     "in_list_view": 1,
+     "label": "Hour",
+     "options": "Hours"
+    },
+    {
+     "fieldname": "standard",
+     "fieldtype": "Link",
+     "in_list_view": 1,
+     "label": "Standard",
+     "options": "Standred"
+    },
+    {
+     "fetch_from": "hours.from_time",
+     "fieldname": "from_time",
+     "fieldtype": "Data",
+     "in_list_view": 1,
+     "label": "From"
+    },
+    {
+     "fetch_from": "hours.to_time",
+     "fieldname": "to_time",
+     "fieldtype": "Data",
+     "in_list_view": 1,
+     "label": "To"
+    },
+    {
+     "columns": 1,
+     "fieldname": "division",
+     "fieldtype": "Link",
+     "in_list_view": 1,
+     "label": "division",
+     "options": "Division"
+    },
+    {
+     "fieldname": "subject",
+     "fieldtype": "Link",
+     "in_list_view": 1,
+     "label": "Subject",
+     "options": "Subject"
+    }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-25 14:23:33.807311",
+ "modified_by": "Administrator",
+ "module": "LMS",
+ "name": "monday_time_tables",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

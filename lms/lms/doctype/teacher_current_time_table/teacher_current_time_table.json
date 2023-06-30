@@ -1,0 +1,131 @@
+{
+ "actions": [],
+ "allow_copy": 1,
+ "allow_rename": 1,
+ "creation": "2023-06-22 15:46:29.302519",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "days",
+  "teacher",
+  "time_table",
+  "next_hour_section",
+  "hours",
+  "column_break_plpd7",
+  "standard",
+  "section_break_8txfb",
+  "division",
+  "column_break_bcg0q",
+  "subject",
+  "topics_section",
+  "topics"
+ ],
+ "fields": [
+  {
+   "fieldname": "time_table",
+   "fieldtype": "Table",
+   "label": "Time Table",
+   "options": "T_time_tables",
+   "read_only": 1
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Link",
+   "label": "Subject",
+   "options": "Subject",
+   "read_only": 1
+  },
+  {
+   "fieldname": "days",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Day"
+  },
+  {
+   "fieldname": "next_hour_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Next Hour"
+  },
+  {
+   "fieldname": "standard",
+   "fieldtype": "Link",
+   "label": "Standard",
+   "options": "Standred",
+   "read_only": 1
+  },
+  {
+   "fieldname": "division",
+   "fieldtype": "Link",
+   "label": "Division",
+   "options": "Division",
+   "read_only": 1
+  },
+  {
+   "fieldname": "hours",
+   "fieldtype": "Link",
+   "label": "Hour",
+   "options": "Hours",
+   "read_only": 1
+  },
+  {
+   "fieldname": "teacher",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Teacher",
+   "options": "Teacher"
+  },
+  {
+   "fieldname": "column_break_plpd7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_8txfb",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "column_break_bcg0q",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "topics_section",
+   "fieldtype": "Section Break",
+   "label": "Topics",
+   "read_only": 1
+  },
+  {
+   "fieldname": "topics",
+   "fieldtype": "Table",
+   "label": "Topics",
+   "options": "upcoming_topics",
+   "read_only": 1
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-06-27 09:54:03.754014",
+ "modified_by": "Administrator",
+ "module": "LMS",
+ "name": "Teacher Current Time Table",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

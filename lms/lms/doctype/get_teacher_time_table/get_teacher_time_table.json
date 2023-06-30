@@ -1,0 +1,134 @@
+{
+ "actions": [],
+ "allow_copy": 1,
+ "allow_rename": 1,
+ "creation": "2023-06-25 12:27:19.734305",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "teacher",
+  "monday_tab",
+  "monday_time_table",
+  "tuesday_tab",
+  "tuesday_time_table",
+  "wednesday_tab",
+  "wednesday_time_table",
+  "thursday_tab",
+  "thursday_time_table",
+  "friday_tab",
+  "friday_time_tables",
+  "saturday_tab",
+  "saturday_time_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "teacher",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Teacher",
+   "options": "Teacher"
+  },
+  {
+   "fieldname": "monday_tab",
+   "fieldtype": "Tab Break",
+   "label": "Monday"
+  },
+  {
+   "fieldname": "monday_time_table",
+   "fieldtype": "Table",
+   "label": "Monday Time Table",
+   "options": "monday_time_tables",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tuesday_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tuesday"
+  },
+  {
+   "fieldname": "tuesday_time_table",
+   "fieldtype": "Table",
+   "label": "Tuesday Time Table",
+   "options": "tuesday_time_tables",
+   "read_only": 1
+  },
+  {
+   "fieldname": "wednesday_tab",
+   "fieldtype": "Tab Break",
+   "label": "Wednesday",
+   "read_only": 1
+  },
+  {
+   "fieldname": "wednesday_time_table",
+   "fieldtype": "Table",
+   "label": "Wednesday Time Table",
+   "options": "wednesday_time_tables",
+   "read_only": 1
+  },
+  {
+   "fieldname": "thursday_tab",
+   "fieldtype": "Tab Break",
+   "label": "Thursday",
+   "read_only": 1
+  },
+  {
+   "fieldname": "thursday_time_table",
+   "fieldtype": "Table",
+   "label": "Thursday Time Table",
+   "options": "thursday_time_tables",
+   "read_only": 1
+  },
+  {
+   "fieldname": "friday_tab",
+   "fieldtype": "Tab Break",
+   "label": "Friday",
+   "read_only": 1
+  },
+  {
+   "fieldname": "friday_time_tables",
+   "fieldtype": "Table",
+   "label": "Friday Time Tables",
+   "options": "friday_time_tables",
+   "read_only": 1
+  },
+  {
+   "fieldname": "saturday_tab",
+   "fieldtype": "Tab Break",
+   "label": "Saturday",
+   "read_only": 1
+  },
+  {
+   "fieldname": "saturday_time_table",
+   "fieldtype": "Table",
+   "label": "Saturday Time Table",
+   "options": "saturday_time_tables",
+   "read_only": 1
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-06-25 15:28:05.814964",
+ "modified_by": "Administrator",
+ "module": "LMS",
+ "name": "Get Teacher Time Table",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

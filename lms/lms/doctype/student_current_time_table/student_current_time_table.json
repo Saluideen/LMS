@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "allow_copy": 1,
+ "allow_rename": 1,
+ "creation": "2023-06-22 15:16:47.592943",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "day",
+  "standard",
+  "division",
+  "time_table",
+  "section_break_zhui0",
+  "hour",
+  "subject",
+  "teacher",
+  "topics_section",
+  "topics"
+ ],
+ "fields": [
+  {
+   "fieldname": "day",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Day"
+  },
+  {
+   "fieldname": "standard",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Standard",
+   "options": "Standred"
+  },
+  {
+   "fieldname": "division",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Division",
+   "options": "Division"
+  },
+  {
+   "fieldname": "time_table",
+   "fieldtype": "Table",
+   "label": "Time Table",
+   "options": "Time Tables",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_zhui0",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "hour",
+   "fieldtype": "Link",
+   "label": "hour",
+   "options": "Hours"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Link",
+   "label": "Subject",
+   "options": "Subject"
+  },
+  {
+   "fieldname": "teacher",
+   "fieldtype": "Link",
+   "label": "Teacher",
+   "options": "Teacher"
+  },
+  {
+   "fieldname": "topics_section",
+   "fieldtype": "Section Break",
+   "label": "Topics",
+   "read_only": 1
+  },
+  {
+   "fieldname": "topics",
+   "fieldtype": "Table",
+   "label": "Topics",
+   "options": "upcoming_topics",
+   "read_only": 1
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-06-27 10:00:14.468637",
+ "modified_by": "Administrator",
+ "module": "LMS",
+ "name": "student_current_time_table",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

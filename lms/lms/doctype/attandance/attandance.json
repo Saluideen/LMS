@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_copy": 1,
+ "allow_rename": 1,
+ "autoname": "format:{AT}-{date}-{hours}",
+ "creation": "2023-06-22 10:48:29.974699",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "section_break_labbo",
+  "standard",
+  "column_break_j87pk",
+  "division",
+  "column_break_yomgl",
+  "hours",
+  "section_break_0x9sw",
+  "attandance"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "standard",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Standard",
+   "options": "Standred"
+  },
+  {
+   "fieldname": "division",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Division",
+   "options": "Division"
+  },
+  {
+   "fieldname": "hours",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Hour",
+   "options": "Hours"
+  },
+  {
+   "fieldname": "attandance",
+   "fieldtype": "Table",
+   "label": "Attandance",
+   "options": "Attandance_table"
+  },
+  {
+   "fieldname": "section_break_labbo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_j87pk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_yomgl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_0x9sw",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-25 23:12:09.249307",
+ "modified_by": "Administrator",
+ "module": "LMS",
+ "name": "Attandance",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

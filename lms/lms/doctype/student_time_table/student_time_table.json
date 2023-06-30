@@ -1,0 +1,126 @@
+{
+ "actions": [],
+ "allow_copy": 1,
+ "allow_rename": 1,
+ "creation": "2023-06-25 23:41:10.546665",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "standard",
+  "division",
+  "monday_tab",
+  "monday_time_table",
+  "tuesday_tab",
+  "tuesday_time_table",
+  "wednesday_tab",
+  "wednesday_time_table",
+  "thursday_tab",
+  "thursday_time_table",
+  "friday_tab",
+  "friday_time_table",
+  "saturday_tab",
+  "saturday_time_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "standard",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Standard",
+   "options": "Standred"
+  },
+  {
+   "fieldname": "division",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Division",
+   "options": "Division"
+  },
+  {
+   "fieldname": "monday_tab",
+   "fieldtype": "Tab Break",
+   "label": "Monday"
+  },
+  {
+   "fieldname": "monday_time_table",
+   "fieldtype": "Table",
+   "options": "s_monday"
+  },
+  {
+   "fieldname": "tuesday_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tuesday"
+  },
+  {
+   "fieldname": "tuesday_time_table",
+   "fieldtype": "Table",
+   "options": "s_tuesday"
+  },
+  {
+   "fieldname": "wednesday_tab",
+   "fieldtype": "Tab Break",
+   "label": "Wednesday"
+  },
+  {
+   "fieldname": "wednesday_time_table",
+   "fieldtype": "Table",
+   "options": "s_wednesday"
+  },
+  {
+   "fieldname": "thursday_tab",
+   "fieldtype": "Tab Break",
+   "label": "Thursday"
+  },
+  {
+   "fieldname": "thursday_time_table",
+   "fieldtype": "Table",
+   "options": "s_thursday"
+  },
+  {
+   "fieldname": "friday_tab",
+   "fieldtype": "Tab Break",
+   "label": "Friday"
+  },
+  {
+   "fieldname": "friday_time_table",
+   "fieldtype": "Table",
+   "options": "s_friday"
+  },
+  {
+   "fieldname": "saturday_tab",
+   "fieldtype": "Tab Break",
+   "label": "Saturday"
+  },
+  {
+   "fieldname": "saturday_time_table",
+   "fieldtype": "Table",
+   "options": "s_saturday"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-06-26 00:11:03.968466",
+ "modified_by": "Administrator",
+ "module": "LMS",
+ "name": "Student Time Table",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-20 23:13:30.289695",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "hour",
+  "teacher",
+  "t_name",
+  "subject",
+  "from_time",
+  "to_time",
+  "day"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "hour",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Hour",
+   "options": "Hours"
+  },
+  {
+   "columns": 2,
+   "fieldname": "subject",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Subject",
+   "options": "Subject"
+  },
+  {
+   "columns": 2,
+   "fetch_from": "hour.from_time",
+   "fieldname": "from_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "From ",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fetch_from": "hour.to_time",
+   "fieldname": "to_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "To",
+   "read_only": 1
+  },
+  {
+   "fieldname": "teacher",
+   "fieldtype": "Link",
+   "label": "Teacher",
+   "options": "Teacher"
+  },
+  {
+   "fieldname": "day",
+   "fieldtype": "Link",
+   "label": "Day",
+   "options": "Day"
+  },
+  {
+   "fetch_from": "teacher.name1",
+   "fieldname": "t_name",
+   "fieldtype": "Data",
+   "label": "Teacher",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-06-25 23:31:33.920784",
+ "modified_by": "Administrator",
+ "module": "LMS",
+ "name": "Time Tables",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

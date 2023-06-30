@@ -1,0 +1,128 @@
+{
+ "actions": [],
+ "allow_copy": 1,
+ "allow_rename": 1,
+ "autoname": "format:{standard}-{subject}-{###}",
+ "creation": "2023-06-26 02:36:04.160628",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "day",
+  "section_break_9e9v2",
+  "subject",
+  "column_break_xg1oz",
+  "teacher",
+  "section_break_23p2n",
+  "standard",
+  "column_break_ftnxo",
+  "division",
+  "column_break_g0fqr",
+  "section_break_9x5pe",
+  "status",
+  "topics"
+ ],
+ "fields": [
+  {
+   "fieldname": "day",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Day",
+   "options": "Day"
+  },
+  {
+   "fieldname": "section_break_9e9v2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "standard",
+   "fieldtype": "Link",
+   "label": "Standard",
+   "options": "Standred"
+  },
+  {
+   "fieldname": "column_break_ftnxo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "division",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Division",
+   "options": "Division"
+  },
+  {
+   "fieldname": "column_break_g0fqr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_9x5pe",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "topics",
+   "fieldtype": "Table",
+   "label": "Topics",
+   "options": "upcoming_topics"
+  },
+  {
+   "default": "New",
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Status"
+  },
+  {
+   "fieldname": "teacher",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Teacher",
+   "options": "Teacher"
+  },
+  {
+   "fieldname": "column_break_xg1oz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Subject",
+   "options": "Subject"
+  },
+  {
+   "fieldname": "section_break_23p2n",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-26 11:22:28.767963",
+ "modified_by": "Administrator",
+ "module": "LMS",
+ "name": "Topics",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,16 @@
+.table_topic{
+    border:2px solid black;
+    padding: 20px;
+    background-color: blanchedalmond;
+    text-align: center;
+    margin-left: 520px;
+    height: 40px;
+    width: 100px;
+   
+    
+
+}
+th{
+    font-weight: bolder;
+    border: 2px solid balck;
+}

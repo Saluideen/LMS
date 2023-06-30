@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Time Table</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/frappe-gantt/dist/frappe-gantt.min.css">
+</head>
+<body>
+    <div id="gantt-chart"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/frappe-gantt/dist/frappe-gantt.min.js"></script>
+    <script>
+        var tasks = [
+            // Replace the data below with your specific time table data
+            {
+                id: 'Subject A',
+                name: 'Subject A',
+                start: '2023-06-25T09:00:00',
+                end: '2023-06-25T11:00:00',
+                progress: 100,
+                dependencies: ''
+            },
+            {
+                id: 'Subject B',
+                name: 'Subject B',
+                start: '2023-06-26T14:00:00',
+                end: '2023-06-26T16:00:00',
+                progress: 100,
+                dependencies: ''
+            },
+            // Add more tasks as needed
+        ];
+
+        var gantt = new Gantt("#gantt-chart", tasks, {
+            header_height: 50,
+            column_width: 30,
+            step: 30,
+            view_modes: ['Quarter Day', 'Half Day', 'Day'],
+            bar_height: 20,
+            bar_corner_radius: 3,
+            arrow_curve: 5,
+            padding: 18,
+            view_mode: 'Day',
+            date_format: 'YYYY-MM-DD',
+            custom_popup_html: function(task) {
+                // Customize the task popup as needed
+                return `
+                    <div class="details-container">
+                        <h5>${task.name}</h5>
+                        <p>Start: ${task._start.format('YYYY-MM-DD HH:mm')}</p>
+                        <p>End: ${task._end.format('YYYY-MM-DD HH:mm')}</p>
+                    </div>
+                `;
+            }
+        });
+
+        gantt.change_view_mode('Day');
+    </script>
+</body>
+</html>

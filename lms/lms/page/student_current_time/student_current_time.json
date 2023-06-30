@@ -1,0 +1,19 @@
+{
+ "content": null,
+ "creation": "2023-06-27 14:17:36.116575",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2023-06-27 14:17:36.116575",
+ "modified_by": "Administrator",
+ "module": "LMS",
+ "name": "student_current_time",
+ "owner": "Administrator",
+ "page_name": "student_current_time",
+ "roles": [],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 1,
+ "title": "Time Table"
+}

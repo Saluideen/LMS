@@ -1,0 +1,29 @@
+/* .table{
+
+    width: 23% !important;
+    font-size: 12px !important;
+    height: 40px !important;
+    margin-bottom: 20px;
+    padding:20px;
+    color: red;
+    border: 2px solid black;
+}
+th{
+    border: 2px solid black;  
+} */
+.table_topic{
+    border:2px solid black;
+    padding: 20px;
+    background-color: blanchedalmond;
+    text-align: center;
+    margin-left: 520px;
+    height: 40px;
+    width: 100px;
+   
+    
+
+}
+th{
+    font-weight: bolder;
+    border: 2px solid balck;
+}
